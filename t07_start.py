@@ -1,6 +1,6 @@
 ######################################################################
-# Author: Dr. Scott Heggen      TODO: Change this to your names
-# Username: heggens             TODO: Change this to your usernames
+# Author: Emily Lovell & Scott Heggen      TODO: Change this to your names
+# Username: lovelle & heggens             TODO: Change this to your usernames
 #
 # Assignment: T07: Turtle Art
 #
@@ -22,6 +22,7 @@ def draw_hexagon(turt):
     # FIXME modify this function so that it's more general
     """
     Draws a randomly colored hexagon using the turtle library
+
     :param turt: a turtle object to draw with
     :return: None
     """
@@ -33,13 +34,15 @@ def draw_hexagon(turt):
 
 
 def main():
-    # FIXME modify the docstring so it's correct for your final code
+    # FIXME modify the docstring so it's correct for your code
     """
-    The main function which draws 10 hexagons
+    The main function which draws exactly 10 hexagons
+
     :return: None
     """
     t = turtle.Turtle()
     wn = turtle.Screen()
+
     # Draws 10 hexagons
     for num in range(10):
         t.penup()
@@ -51,4 +54,6 @@ def main():
 
     wn.exitonclick()
 
-main()
+
+if __name__ == "__main__":
+    main()
