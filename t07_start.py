@@ -1,6 +1,6 @@
 ######################################################################
-# Author: Emily Lovell & Scott Heggen      TODO: Change this to your names
-# Username: lovelle & heggens             TODO: Change this to your usernames
+# Author: Emily Lovell & Scott Heggen      Elaheh Jamali, Jacob Hill
+# Username: lovelle & heggens             Jamalie, Hilljac
 #
 # Assignment: T07: Turtle Art
 #
@@ -18,19 +18,20 @@ import turtle
 import random
 
 
-def draw_hexagon(turt):
+def draw_shape(greg):
     # FIXME modify this function so that it's more general
     """
     Draws a randomly colored hexagon using the turtle library
 
-    :param turt: a turtle object to draw with
+    :param
     :return: None
     """
-    turt.color((random.random(), random.random(), random.random()))     # gives the turtle a random color
-
-    for num in range(6):
-        turt.forward(50)
-        turt.left(60)           # the angle ensures a perfect hexagon
+    greg.color((random.random(), random.random(), random.random()))     # gives the turtle a random color
+    while True:
+        side = random.randrange(4,10)
+        for num in range(side):
+            greg.forward(80)
+            greg.left(75)           # the angle ensures a perfect
 
 
 def main():
@@ -40,17 +41,17 @@ def main():
 
     :return: None
     """
-    t = turtle.Turtle()
+    greg = turtle.Turtle()
     wn = turtle.Screen()
+    draw_shape(greg)
 
-    # Draws 10 hexagons
-    for num in range(10):
-        t.penup()
-        # Move the turtle to a random place on the screen
-        t.goto(random.randint(-300, 300), random.randint(-300, 300))
-        t.pendown()
+    # for num in range(10):
+    #     t.penup()
+    #     # Move the turtle to a random place on the screen
+    #     t.goto(random.randint(-300, 300), random.randint(-300, 300))
+    #     t.pendown()
 
-        draw_hexagon(t)
+        # draw_shape(t)
 
     wn.exitonclick()
 
