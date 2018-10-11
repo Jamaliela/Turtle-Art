@@ -79,7 +79,8 @@ def main():
     wn.bgcolor("lightblue")            # giving the background color for the screen
     draw_shape(greg, colors)           # calling the function to draw the random shapes
 
-    wn.exitonclick()
+    wn.exitonclick()                  # this function will never be executed because this is an infinite loop and will never exit the previous l
+    #  some errors will pop up after closing the screen which will be due the force exit and interrupting the turtle library
 
 
 if __name__ == "__main__":
